@@ -3,11 +3,11 @@ A js program random generate 12 words metamask mnemonic and check the balance in
 
 Requirement
 -----------------
-ethers
+* ethers
 
-web3
+* web3
 
-bip39
+* bip39
 
 Quickstart
 -----------------
