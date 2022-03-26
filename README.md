@@ -4,7 +4,9 @@ A js program random generate 12 words metamask mnemonic and check the balance in
 Requirement
 -----------------
 ethers
+
 web3
+
 bip39
 
 Quickstart
