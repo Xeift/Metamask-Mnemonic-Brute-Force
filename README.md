@@ -19,3 +19,13 @@ Just change web3 provider api in line 4. You can use Infura, Alchemy or other we
 If there's no eth in the account, then mnemonic and address will be record to `zerobalance.txt`.
 
 Otherwise will record to `cracked.txt`
+
+if you want to run it on replit, line 4 should look like this:
+
+`const api = process.env['api'] // web3 provider api`
+
+put your web3 provider url in environment variable, key = api, value = 'https://infura......'
+
+if you want to run it on your pc, line 4 should look like this:
+
+`const api = 'https://infura......' // web3 provider api`
