@@ -29,3 +29,5 @@ put your web3 provider url in environment variable, key = api, value = 'https://
 if you want to run it on your pc, line 4 should look like this:
 
 `const api = 'https://infura......' // web3 provider api`
+
+#IF YOU KNOW NOTHING ABOUT JAVASCRIPT, **DO NOT DM ME**. CONSIDER LEARN JS FIRST, I DON'T HAVE TIME ANSWERING YOUR STUPID QUESTIONS.
