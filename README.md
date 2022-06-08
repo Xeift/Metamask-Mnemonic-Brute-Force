@@ -20,6 +20,9 @@ If there's no eth in the account, then mnemonic and address will be record to `z
 
 Otherwise will record to `cracked.txt`
 
+Note
+-----------------
+
 if you want to run it on replit, line 4 should look like this:
 
 `const api = process.env['api'] // web3 provider api`
@@ -29,6 +32,8 @@ put your web3 provider url in environment variable, key = api, value = 'https://
 if you want to run it on your pc, line 4 should look like this:
 
 `const api = 'https://infura......' // web3 provider api`
+
+make sure you select nodejs when create repl on replit
 
 # IF YOU KNOW NOTHING ABOUT JAVASCRIPT, **DO NOT DM ME**. CONSIDER LEARN JS FIRST.
 
