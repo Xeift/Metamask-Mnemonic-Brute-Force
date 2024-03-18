@@ -1,7 +1,7 @@
 const ethers = require('ethers')
 const fs = require('fs/promises');
 
-const API_KEY = 'https://eth-mainnet.g.alchemy.com/v2/JCNCAmqFfaWQ9WQrW143reOVrnRg1YfY'; // you need to put your web3 provider (Alchemy, Infura, Geth, etc) api url here
+const API_KEY = 'https://eth-mainnet.g.alchemy.com/v2/2An27dIF59-idaplkQ28KfFre-H2KnK1'; // you need to put your web3 provider (Alchemy, Infura, Geth, etc) api url here
 const provider = new ethers.JsonRpcProvider(API_KEY);
 
 async function main() {
