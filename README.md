@@ -14,6 +14,14 @@ Try it [here](https://replit.com/@xeiftc/MetamaskMnemonicBruteForce).
 
 If there's ether in wallet, it will record to `cracked.json`.
 
+Tutorial
+-----------------
+1. Download this script
+
+2. Run `npm i` in your terminal
+
+3. Run `node index.js` in your terminal
+
 Note
 -----------------
 
