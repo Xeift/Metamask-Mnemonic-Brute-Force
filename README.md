@@ -57,3 +57,16 @@ This script can try 350000 permutations(mnemonic) in a day. You can simply calcu
 That means you need **42618535191663525756665312868166.66 years** to brute force a wallet with Ether in it.
 
 If you want to get rich by brute force, I suggest you buy some fried chicken and beers, go home and watch Netflix the whole day and forget everything about brute force.
+
+# 🚨 Scam Alert
+If you are reading this, then you must have some interest in brute forcing. There have been some reports that recently someone was selling fake brute force scripts. None of the existing scripts are able to crack an account with ETH in a short time. To my knowledge, there's no way to reverse, crack, or speed up SHA-256 efficiently, even with quantum algorithms. If you see someone claiming that their script can find an address with ETH in it without any additional knowledge (e.g., the mnemonic words that derive that address but in the wrong order, the first 8 mnemonic words of that address, etc.), then that's 100% a scam.
+
+How does the scam work?
+> 1. They sell the script.
+> 2. They write some logic to display a mnemonic that derives an account owned by them >when you run the script for a while.
+> 3. There is USDT in that account, but it lacks ETH to pay for gas.
+> 4. You transfer ETH to that account, and your ETH will be immediately transferred to the scammer once the account receives it.
+
+So steps `1` and `4` are how they make money. Sometimes they even implement ransomware or keyloggers.
+
+Since this script is under the MIT license, you are free to modify, sell, or do whatever you want with it. I don't really care. But please remember, **do not run the code if you don't know how it works**. You can ask ChatGPT if there's anything malicious before running any code. Stay safe.
