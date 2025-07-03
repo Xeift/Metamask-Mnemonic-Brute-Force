@@ -63,9 +63,9 @@ If you are reading this, then you must have some interest in brute forcing. Ther
 
 How does the scam work?
 > 1. They sell the script.
-> 2. They write some logic to display a mnemonic that derives an account owned by them >when you run the script for a while.
+> 2. They write some logic to display a mnemonic that derives an account owned by them when you run the script for a while.
 > 3. There is USDT in that account, but it lacks ETH to pay for gas.
-> 4. You transfer ETH to that account, and your ETH will be immediately transferred to the scammer once the account receives it.
+> 4. You want to get the USDT out of that account, so you transfer ETH to that account, and your ETH will be immediately transferred to the scammer once the account receives it.
 
 So steps `1` and `4` are how they make money. Sometimes they even implement ransomware or keyloggers.
 
