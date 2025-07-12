@@ -1,9 +1,5 @@
 # Metamask-Mnemonic-Brute-Force
-A js program random generate 12 words metamask mnemonic and check the balance in the account.
-
-Requirement
------------------
-* ethers
+A program randomly generates 12 words MetaMask mnemonic and checks the balance in the account. Supports both Node.js and Python.
 
 Quickstart
 -----------------
