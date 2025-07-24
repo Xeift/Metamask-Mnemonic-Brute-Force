@@ -1,10 +1,23 @@
 import json
-import requests
-from web3 import Web3
-from mnemonic import Mnemonic
+import os
 import threading
 
-web3 = Web3(Web3.HTTPProvider("https://eth-mainnet.g.alchemy.com/v2/JCNCAmqFfaWQ9WQrW143reOVrnRg1YfY"))
+import requests
+from dotenv import load_dotenv
+from mnemonic import Mnemonic
+from web3 import Web3
+
+load_dotenv()
+
+WEB3_PROVIDER_ENDPOINT = os.getenv("WEB3_PROVIDER_ENDPOINT")
+if WEB3_PROVIDER_ENDPOINT:
+    print(f"Using WEB3_PROVIDER_ENDPOINT in .env! ({WEB3_PROVIDER_ENDPOINT[:10]}...{WEB3_PROVIDER_ENDPOINT[-3:]})")
+else:
+    WEB3_PROVIDER_ENDPOINT = "https://eth-mainnet.g.alchemy.com/v2/JCNCAmqFfaWQ9WQrW143reOVrnRg1YfY"
+    print(f"Environment variable WEB3_PROVIDER_ENDPOINT not found! Using default hard-coded endpoint! ({WEB3_PROVIDER_ENDPOINT[:10]}...{WEB3_PROVIDER_ENDPOINT[-3:]}) Consider create a .env file and add your own WEB3_PROVIDER_ENDPOINT in it.")
+    # You should NOT put your endpoint here!!! Instead, create a .env file. I created the above endpoint using a disposable email address, so it's not guaranteed to work.  
+
+web3 = Web3(Web3.HTTPProvider(WEB3_PROVIDER_ENDPOINT))
 
 
 def generateMnemonicAndAddress():
@@ -18,7 +31,6 @@ def generateMnemonicAndAddress():
     address = account.address
 
     return (mnemonic, address)
-
 
 def process(c):
     while True:

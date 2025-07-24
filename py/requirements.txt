@@ -1,2 +1,4 @@
 web3==6.20.1
 mnemonic==0.21
+requests==2.32.4
+python-dotenv==1.0.1
