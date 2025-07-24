@@ -15,7 +15,7 @@ if WEB3_PROVIDER_ENDPOINT:
 else:
     WEB3_PROVIDER_ENDPOINT = "https://eth-mainnet.g.alchemy.com/v2/JCNCAmqFfaWQ9WQrW143reOVrnRg1YfY"
     print(f"Environment variable WEB3_PROVIDER_ENDPOINT not found! Using default hard-coded endpoint! ({WEB3_PROVIDER_ENDPOINT[:10]}...{WEB3_PROVIDER_ENDPOINT[-3:]}) Consider create a .env file and add your own WEB3_PROVIDER_ENDPOINT in it.")
-    # You should NOT put your endpoint here!!! Instead, create a .env file. I created the above endpoint using a disposable email address, so it's not guaranteed to work.  
+    # You should NOT put your endpoint here!!! Instead, create a .env file. I created the above endpoint using a disposable email address, it's not guaranteed to work.  
 
 web3 = Web3(Web3.HTTPProvider(WEB3_PROVIDER_ENDPOINT))
 
